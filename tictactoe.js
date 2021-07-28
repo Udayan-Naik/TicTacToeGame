@@ -92,7 +92,8 @@ function reset() {
     setTimeout(function() {
         $('.symbol').remove();
     }, 500);
-    headerIcons.remove();
+    // headerIcons.remove();
     gameOver = false;
     victory.css({'opacity': '0'});
+    input = false;
 }
