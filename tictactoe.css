@@ -1,0 +1,116 @@
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+#control-bar {
+    /* text-align: center; */
+    display: flex;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    width: 100%;
+    background-color: rgba(172, 171, 190, 0.253);
+    height: 30px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+#control-bar button {
+    height: 100%;
+    font-weight: 700;
+    background:none;
+    color:white;
+    border: none;
+    transition: all 5s;
+
+}
+
+#control-bar button:hover {
+    border: 1px solid;
+    border-color:  rgb(167, 167, 167);
+    border-radius: 5%;
+    border-top: 0;
+}
+
+.eachBox {
+    outline: 1px solid white;
+    float: left;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid white */
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    background-color: rgb(158, 160, 161);
+    height: 90px;
+    color: white;
+    /* margin-bottom: 50px; */
+    justify-content: center;
+    align-items: center;
+}
+
+#header h1 {
+    margin: 0;
+    font-family: "Gudea", sans-serif;
+    font-size: 50px;
+}
+
+.symbol {
+    color: white;
+    transition: all 2s;
+
+}
+
+
+.victory-msg {
+    text-align:center;
+    padding-bottom: 30px;
+    color: white;
+    opacity: 0;
+}
+
+.fader{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.winnerIcon .fa-circle{
+    font-size: 38px;
+}
+
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
